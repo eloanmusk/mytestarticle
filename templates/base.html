@@ -1,0 +1,20 @@
+{% load static %}
+<html>
+
+<head>
+      <title>sajjan blog</title>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+      <link rel="stylesheet" href="{% static 'css/base.css' %}">
+</head>
+
+<body>
+      <header>
+            <h1><a href="{% url 'index' %}">Sajjan Blog</a></h1>
+      </header>
+      <div>
+            {% block content %}
+            {% endblock content %} </div>
+      <h4><a href="{% url 'post_new' %}">Create New Post</a></h4>
+</body>
+
+</html>

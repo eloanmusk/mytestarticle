@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block content %}
+<form action="" method="post">{% csrf_token %}
+    <h3>Do you really want to delete "{{ post.title }}"?</h3>
+    <h4 class="post-delete">You cannot undo this action once proceeded.</h4>
+    <button type="submit">Confirm</button>
+</form>
+{% endblock content %}
